@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const saveData = (data) => async dispatch => {
-    await axios.post("http://127.0.0.1:8000/api/register",data).then((resp) => {
+    await axios.post("https://api-ekoomedia-prueba.herokuapp.com/api/register",data).then((resp) => {
         let data = resp.data;
     
         if(data.code === 200){
